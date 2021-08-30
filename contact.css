@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #1D438A;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+#row{
+  display: flex;
+}
+#right{
+  display: flex;
+  margin-left: 5px;
+  
+}
+#left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+
+  margin-right: 5px;
+}
+.contact-box{
+  width: 110px;
+  height: 90px;
+  background-color: #DEDEDE;
+  border: 5px solid #e8833a;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.fa-envelope:before {
+
+  
+}
+.contact-box i{
+  font-size: 28px;
+  color: #1D438A;
+}
+.box-name{
+  font-size: 18px;
+  font-weight: 900;
+  color: #293845;
+}
+.box-content{
+  font-size: 10px;
+  color: #2c88d9;
+}
+form {
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+}
+form h1 {
+  font-size: 20px;
+}
+form .separation {
+  width: 100%;
+  height: 1px;
+  background-color: #1D438A;
+}
+form .corps-formulaire {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+form .corps-formulaire .groupe {
+  position: relative; /* Pour mettre positionner l’élément dans le flux normal de la page */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+form .corps-formulaire .gauche .groupe input {
+  margin-top: 5px;
+  padding: 10px 5px 10px 30px;
+  border: 1px solid #c9c9c9;
+  outline-color: #1D438A;
+  border-radius: 5px;
+}
+form .corps-formulaire .gauche .groupe i {
+  position: absolute; /* positionné par rapport à son parent le plus proche positionné */
+  left: 0;
+  top: 25px;
+  padding: 9px 8px;
+  color: #1D438A;
+}
+form .corps-formulaire .droite {
+  margin-left: 40px;
+}
+form .corps-formulaire .droite .groupe {
+  height: 100%;
+}
+form .corps-formulaire .droite .groupe textarea {
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 2px solid #1D438A;
+  outline: none;
+  border-radius: 5px;
+  resize: none;
+  height: 81.7%;
+}
+form .pied-formulaire button {
+  margin-top: 10px;
+  background-color: #DEDEDE;
+  border: 3px solid #e8833a;
+  color: #293845;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+form .pied-formulaire button:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 920px) {
+  form .corps-formulaire .droite {
+    margin-left: 0px;
+  }
+}

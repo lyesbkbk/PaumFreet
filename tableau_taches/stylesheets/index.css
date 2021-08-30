@@ -1,0 +1,147 @@
+/* body{
+    height: 100%;
+} */
+#top-nav{
+ background-color: #dfe6ed;
+ border-bottom: 2px solid #9eadba;
+}
+#nav-text{
+    color: #293845;
+}
+#logo-image{
+    width: 70px;
+    margin-right: 10px;
+}
+#logo-top-text{
+    font-size: 25px;
+}
+#logo-sub-text{
+    font-size: 18px;
+}
+#login-btn{
+    font-size: 20px;
+    border: 3px solid #e8833a;
+    background-color: #f3c19d;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 30px;
+    margin-right: 15px;
+    font-weight: 900;
+}
+#signup-btn{
+    border: 3px solid #e8833a;
+    background-color: #f3c19d;
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 6px 20px;
+    font-weight: 900;
+}
+.header-column{
+    display: flex;
+}
+#column-1{
+    flex: 1;
+}
+#column-2{
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+.lead{
+    font-weight: 600;
+}
+#sub-text{
+    font-size: 18px;
+}
+#jt-1{
+    background-color: white;
+}
+#big-pic{
+    width: 400px;
+}
+footer{
+    border-top: 2px solid #9eadba;
+}
+#lower-btn{
+    font-size: 20px;
+    border: 3px solid #e8833a;
+    background-color: #f3c19d;
+    color: rgb(43, 43, 43);
+    /* padding: 6px 20px; */
+    border-radius: 30px;
+    margin-right: 15px;
+    font-weight: 900;
+    width: 230px;
+}
+.f-col{
+    flex: 1;
+    display: flex;
+}
+#f-span{
+    font-size: 23px;
+    font-weight: 600;
+}
+#f-span i{
+    color: #6558f5;
+    font-weight: 900;
+}
+.f-col:nth-child(1){
+    flex-direction: row;
+}
+.f-col:nth-child(2) p{
+    text-align: center;
+}
+.icon{
+    width: auto;
+    height: 60px;
+    margin: 6px;
+    
+}
+.sub-col{
+    display: flex;
+    flex: 1;
+}
+#left-footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#left-footer-top{
+    display: flex;
+    font-size: 28px;
+    font-weight: 600;
+}
+#left-footer-bottom{
+    display: flex;
+}
+#mid-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+}
+#mid-footer-left{
+    display: flex;
+    /* flex: 1; */
+    padding-right: 10px;
+}
+#mid-footer-right{
+    display: flex;
+    /* flex: 1; */
+    text-align: center;
+}
+#logo-image-2{
+    height: 90px;
+}
+#right-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer-row{
+    display: flex;
+    padding-right: 100px;
+    padding-left: 100px;
+}

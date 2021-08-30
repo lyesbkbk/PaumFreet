@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="inscription.css" rel="stylesheet">
+    <title>inscription</title>
+</head>
+
+<body>
+    <header id="entete">
+        <img src="./logo.png" alt="logo paumfreet">
+        <h1>PAUM FREET &#8482</h1>
+    </header>
+
+    <p class="caption">Epluchez vos idées, Gagnez du temps</span>
+    <form action="inscription.php" id="contact" method="post">
+
+        <h2>Créez votre compte</h3>
+
+        <div>
+            <label for="name">Nom </label>
+            <input type="text" id="name" placeholder="votre nom" name="nom" required><!--
+
+            --><label for="name">Prenom</label><!--
+            --><input type="text" id="firtsname" placeholder="votre prenom" name="prenom" required>
+
+            <label for="password">Mot de passe </label>
+            <input class="large-field" type="password" id="name" placeholder="Mot de passe" name="mdp" required>
+
+            <label for="password">Confirmer votre mot de passe</label>
+            <input class="large-field" type="password" id="name" placeholder="Confirmer le mot de passe" name="confmdp" required>
+
+
+            <label for="email">Email</label>
+            <input class="large-field"  type="text" id="email" placeholder="votre email" name="mail" required>
+
+            <p>En vous inscrivant, vous connfirmez avoir lu et accepté les conditions générales d'utilisation.</p>
+
+            <input type="submit" value="Envoyer" class="button">
+            <hr>
+            <p>Vous avez déjà un compte ? Connectez-vous !</p>
+        </div>
+    </form>
+</body>
+
+</html>

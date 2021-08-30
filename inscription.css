@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body {
+    font-family: Roboto, roboto, Arial;
+}
+
+#entete
+{
+    width: 100%;
+    text-align: center;
+}
+
+#entete img {
+    height: 80px;
+}
+#entete h1 {
+    font-size: 1.2em;
+    margin: 0 0 60px 0;
+}
+
+
+
+
+
+.caption {
+    text-align: center;
+    color: #333;
+    font-size: 1.2em;
+}
+
+
+
+
+
+#contact
+{
+    background-color: #dedede;
+    border: 2px solid #bbb;
+    padding: 0 40px 40px 40px;
+    text-align: center;
+    width: 550px;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    color: #555;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+#contact input,
+#contact input {
+    font-size: 1.1em;
+    background-color: #bbb;
+    border: 0;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 3px;
+    width: 185px;
+}
+
+#contact input[type="text"]::placeholder,
+#contact input[type="password"]::placeholder {
+    color: #555;
+}
+
+
+#contact label {
+    display: none;
+}
+
+#contact input.large-field {
+    width: 400px;
+}
+
+#contact input[type="submit"] {
+    background-color: #1D4381;
+    color: #ddd;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #2b59a1;
+    color: #ddd;
+    cursor: pointer;
+}
+
