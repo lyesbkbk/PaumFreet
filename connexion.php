@@ -16,6 +16,8 @@ $stmt->execute();
 
 
 
+
+
 if($resultat = $stmt->fetch()) {
 
     $hash = $resultat["hashed_password"];

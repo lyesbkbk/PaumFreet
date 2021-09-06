@@ -2,13 +2,15 @@
 session_start();
 
 include("./connexion_bdd.php");
-//include("./connexion.php");
+
 
 $email = $_SESSION["email"];
 
+echo($email);
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-
-$rqt = "SELECT id, prenom FROM users WHERE email = :email" ;
+try {
+$rqt = "SELECT id, email, firstname FROM users WHERE email = :email" ;
 
 $stmt = $conn->prepare($rqt);
 
@@ -16,19 +18,11 @@ $stmt->bindParam(':email', $email);
 
 $stmt->execute();
 
-if($resultat = $stmt->fetch()) {
-    $verif = $resultat["id"];
-    echo($verif);
-    echo("<html><body>$verif</body></html>");
-
+$result = $stmt->fetch();
+} catch(Exception $e) {
+    echo $e->getMessage();
+    exit;
 }
 
-/*
-$verif = $resultat["id"];
+$id = $result['id'];
 
-echo($verif);
-*/
-/*
-$userid = 0
-$_SESSION["userid"] = 
-*/
